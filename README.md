@@ -1,4 +1,4 @@
-Student Performance Prediction using Machine Learning
+Student Performance Prediction using Machine Learning<br>
 Overview
 This project builds a machine learning model to predict students’ math scores based on demographic and academic features.
 The goal is to demonstrate a complete end‑to‑end ML workflow including preprocessing, model training, evaluation, and visualization using industry‑standard practices.

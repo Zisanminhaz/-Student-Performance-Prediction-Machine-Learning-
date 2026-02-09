@@ -1,97 +1,82 @@
-Student Performance Prediction using Machine Learning<br>
-Overview
-This project builds a machine learning model to predict students’ math scores based on demographic and academic features.
-The goal is to demonstrate a complete end‑to‑end ML workflow including preprocessing, model training, evaluation, and visualization using industry‑standard practices.
+Here’s a more concise and formal version of the README without emojis:
 
-Problem Statement
-Given student background information and previous exam scores, predict the math score as accurately as possible using supervised learning.
+---
 
-Problem Type: Regression
+# Student Performance Prediction (Machine Learning)
 
-Target Variable: math score
+This project predicts students' math exam scores using other performance and demographic features with a Random Forest Regression model.
 
-Dataset
-Source: Kaggle – Students Performance Dataset
+---
 
-Features
-Gender
+## Project Overview
 
-Race/Ethnicity
+The dataset used is `StudentsPerformance.csv`, and the goal is to predict a student’s **math score** based on other exam results and demographic data.
 
-Parental level of education
+### Features:
 
-Lunch type
+* Data preprocessing and feature scaling
+* Random Forest model for regression
+* Evaluation using R² and RMSE
+* Visualization of Actual vs Predicted math scores
 
-Test preparation course
+---
 
-Reading score
+## Technologies Used
 
-Writing score
+* Python
+* Pandas
+* NumPy
+* scikit-learn
+* Matplotlib
 
-Tools and Technologies
-Python
+---
 
-Pandas, NumPy
+## Setup Instructions
 
-Scikit‑learn
+### 1. Clone the repository
 
-Matplotlib
+```bash
+git clone https://github.com/Zisanminhaz/-Student-Performance-Prediction-Machine-Learning-.git
+cd Student-Performance-Prediction-Machine-Learning-
+```
 
-Methodology
-Load and clean the dataset
+### 2. Install dependencies
 
-Separate numerical and categorical features
+```bash
+pip install -r requirements.txt
+```
 
-Apply One‑Hot Encoding to categorical features
+Or manually:
 
-Apply Standard Scaling to numerical features
-
-Split data into training and testing sets (80/20)
-
-Train a Random Forest Regressor
-
-Evaluate model performance using regression metrics
-
-Visualize results using an Actual vs Predicted plot
-
-Model
-Algorithm: Random Forest Regressor
-Reason: Strong performance on tabular data and ability to capture non‑linear relationships.
-
-Results
-R² Score: 0.85
-
-RMSE: ~6
-
-These results indicate strong predictive performance with good generalization and no overfitting.
-
-Visualization
-An Actual vs Predicted scatter plot is used to validate model performance.
-Predictions closely align with real values, confirming model reliability.
-
-How to Run the Project
+```bash
 pip install pandas numpy scikit-learn matplotlib
+```
+
+### 3. Run the Model
+
+```bash
 python model.py
-Project Structure
-ML_Project/
-│
-├── model.py
-├── StudentsPerformance.csv
-├── README.md
-Key Learnings
-Proper preprocessing significantly improves model performance
+```
 
-Using pipelines prevents data leakage
+Make sure the dataset (`StudentsPerformance.csv`) is in the project folder.
 
-Random Forest performs well for structured regression problems
+---
 
-Future Work
-Hyperparameter tuning with GridSearchCV
+## Evaluation Metrics
 
-Model comparison with Linear Regression and Gradient Boosting
+* **R² Score**: Measures how well the model explains the variance in the data.
+* **RMSE (Root Mean Squared Error)**: Measures the average magnitude of error in predictions.
 
-Convert problem to classification (Pass/Fail analysis)
+---
 
-Author
-Minhaz Alam Jisan
-Machine Learning and Python Enthusiast
+## Visualization
+
+The model's performance is visualized using a scatter plot comparing **actual** vs **predicted** math scores.
+
+---
+
+## License
+
+This project is distributed under the MIT License.
+
+

@@ -1,6 +1,4 @@
-Here’s a more concise and formal version of the README without emojis:
 
----
 
 # Student Performance Prediction (Machine Learning)
 
